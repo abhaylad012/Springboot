@@ -1,0 +1,45 @@
+java spring boot jpa - Postgres
+
+Steps:
+
+1. Add maven dependancy of spring boot jpa 
+	From maven site add spring boot jpa dependancy into pom.xml or add jar of spring boot jpa, data jpa
+	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+	</dependency>
+
+2. Add db driver dependancy
+	From maven site add postgres dependancy into pom.xml or add jar of postgresql
+	<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+	</dependency>
+	
+3. Add configuration in application.properties in project
+	with hikari  connection pool*
+	
+	add datasource url, username, password
+	
+	## default connection pool
+	spring.datasource.hikari.connectionTimeout=20000
+	spring.datasource.hikari.maximumPoolSize=5
+
+	## PostgreSQL
+	spring.datasource.url=jdbc:postgresql://localhost:5432/postgres
+	spring.datasource.username=postgres
+	spring.datasource.password=root
+	
+	###Here in datasource.url
+	db name which is postgresql 
+	then localhost
+	port number
+	db name which we want to use is mentioned
+
+Done 
+
+For postgres use psql commandline tool
+postgres is having by 
+	default username as postgres
+	deafault port as 5432

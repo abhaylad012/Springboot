@@ -1,0 +1,22 @@
+Hystrix into spring boot Steps:
+
+1. Add dependancy into pom.xml
+
+	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+	</dependency>
+
+2. Add @EnableCircuitBreaker to main spring application class
+
+3. Add @HystrixCommand to method where you need to add circuit breaker
+
+4. Configure hystrix behavior
+	Add fallbackMethod = "" into HystrixCommand()
+	eg.HystrixCommand(fallbackMethod = "getFallbackCatelogItem")
+	
+5. If we want to add fallbackMethod on seperate calls then we have to add tht function in service class
+	and then autowired class instance in RestController method
+	
+6. We can add HystrixCommand --> HstrixProperties also
+	

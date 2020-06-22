@@ -1,0 +1,43 @@
+Postgres commandline or sql shell or psql commands
+
+**for server localhost, database, port, username by clicking enter it willl take default values
+
+1. List of databases
+	\l or \list
+
+2. To connect database
+	\c db_name or \connect db_name
+
+3. Create database
+	create database db_name;
+	'-' is not allowed in name of db
+	
+4. Create table
+	CREATE TABLE table_name (
+	column_name TYPE column_constraint,
+	table_constraint table_constraint
+	) INHERITS existing_table_name;
+	
+	eg. CREATE TABLE movie (
+	movieId varchar
+	table_constraint table_constraint
+	) INHERITS existing_table_name;
+	
+5.Show all tables 
+	\dt
+
+6. To describe table
+	\d table_name
+	
+7. Insert values in table
+**Always add values in single inverted quomas' '
+	INSERT INTO table(column1, column2, …)
+	VALUES
+	(value1, value2, …);
+	
+	INSERT INTO table (column1, column2, …)
+	VALUES
+	(value1, value2, …),
+	(value1, value2, …) ,...;
+	
+	eg. insert into movie (def_id,movie_id, name) values('1','1','Terminal');

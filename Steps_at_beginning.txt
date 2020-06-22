@@ -1,0 +1,34 @@
+1.Creating spring boot application
+	Steps:
+	1. How to create spring boot application
+	   zip files or projects from spring.boot.io with configuration we wants in application
+	
+2. Build service API
+	3 api
+	resource classes
+	model classes
+	port no check hard coded values are accessible or not
+	
+	*study
+		1. different decorators in main file
+	
+3. Using Rest template to call external microservices API
+4. Using bean to create RestTemplate
+5. Implement Service discovery ( Microservices Architecture )
+6. Eureka
+	Eureka Server
+	Eureka Client
+7. Client Side Loadbalancing
+
+
+java = Controller class, moel class, main class	
+	   Getter,setter, Constructor
+	   Collection framework: Collection, Collections, SingletonList
+	   
+
+Spring Boot:
+	Annotations:
+		@SpringBootApplication 
+		Web Bind annotations
+			@RestController, @RequestMapping, @PathVariable
+

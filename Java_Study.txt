@@ -1,0 +1,74 @@
+Spring Boot study
+
+java = Controller class, moel class, main class	
+	   Getter,setter, Constructor
+	 
+	   Inteface
+	   Polymorphism
+	   
+	   JAR and WAR 
+	   pojo classes
+	   
+Collection framework
+	Collection, Collections, SingletonList
+	Streams
+	map
+	arrayList
+	Arrays
+	
+Editor IntelliJ----No
+		STS should download for  Spring boot
+
+Spring Framework
+	Maven - POM.xml, archtype for project
+	Spring Context, Sprring Core
+	Dependancy Injection - IOC, Construct injection
+		Spring Bean Factory
+		Application Context and Property Initialization - spring.xml = beans defination, bean for Class name
+		To configure java configurations ways. -- by xml file, annotations, java configurations
+		Bean Properties
+		Construction Injection
+	Bean Autowiring
+	Bean Scope
+	
+	Annotation based configuration - no xml file is reuired instead of that we create AppConf.java
+	
+	Annotation Component AutoWired Primary Qualifier
+		@Component, @Autowired, @Qualifier, @Bean, @Configured
+	
+	Annotations and Required Annotations
+	
+	Lifestyle callbacks
+	
+	Event Handling in Spring
+	
+	Spring AOP Concept
+
+	Controller , data, service layer
+	
+	Request Dispatcher
+	
+
+Spring Boot Study
+
+	Singleton Design pattern
+	
+	REST Controller
+	Spring MVC
+	business Service
+	Application properties
+	JPA
+	Entity Relationship
+	
+	
+Spring Boot
+
+1. servlet container, embedded Tomcat
+   embedded Jetty, Thymeleaf, application context
+   beans
+   pom.xml
+   actuator
+2. Annotations:
+		@SpringBootApplication 
+		Web Bind annotations
+			@RestController, @RequestMapping, @PathVariable

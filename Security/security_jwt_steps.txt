@@ -1,0 +1,30 @@
+Security JWT tokens
+
+1. Add Spring security dependancy
+<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+			<version>2.3.0.RELEASE</version>
+		</dependency>
+
+This is basic spring boot starter security feature as login before accessing Api calls	
+2. Create SecurityConfigurer class
+	1.	and extend with WebSecurityConfigurerAdapter
+	
+	2.	generate->override configure AuthenticationManagerBuilder method
+		protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+	3.	add in this method auth.userDetailsService(myUserDetailsService);
+		in MyUserDetailsService class we will define user with password
+	4.	create instance of MyUserDetailsService myUserDetailsService nad autowired it in same class
+	5.	create override method
+		public UserDetails loadUserByUsername(String userName) throws UsernameNotFoundException
+	6.	Add user details or user object with username, password, authority
+				eg. return new User("abhay","123", new ArrayList<>());
+	7.	Add method PasswordEncoder in SecurityConfigurer class
+		define PasswordEncoder type and getInstance()
+		add @Bean on method
+	8.	Add EnableWebSecurity annotation on SecurityConfigurer
+
+
+Link for JWT : https://www.youtube.com/watch?v=X80nJ5T7YpE
